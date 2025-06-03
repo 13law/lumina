@@ -107,8 +107,9 @@
 
 
 
-  <title>Announcement Banner</title>
+<title>Announcement Banner</title>
 <style>
+  /* Banner container */
   .announcement-banner {
     background-color: #1ebbff;
     color: #fff;
@@ -117,11 +118,33 @@
     align-items: center;
     justify-content: space-between;
     font-family: Arial, sans-serif;
+    position: relative; /* For positioning the close button */
   }
+
+  /* Content inside the banner: image + text + button */
+  .banner-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px; /* space between image and text */
+    flex: 1; /* take up remaining space */
+  }
+
+  /* Optional image styling */
+  .banner-image {
+    max-width: 80px;
+    max-height: 80px;
+    object-fit: contain;
+  }
+
+  /* Text styling */
   .banner-text {
     font-size: 1.2em;
     margin: 0;
+    flex: 1; /* allow text to expand */
   }
+
+  /* Button styling */
   .banner-button {
     background-color: #fff;
     color: #1ebbff;
@@ -133,22 +156,62 @@
     text-decoration: none;
     transition: background-color 0.3s;
   }
+
   .banner-button:hover {
     background-color: #e0e0e0;
+  }
+
+  /* Close button styling */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    font-size: 1.5em;
+    color: #fff;
+    cursor: pointer;
+    line-height: 1;
+  }
+  .close-btn:hover {
+    color: #ccc;
   }
 </style>
 
 
 
-<div class="announcement-banner">
-  <p class="banner-text">🚨 Sudan is currently facing one of the worst humanitarian crisis out there. Donate today even if its a dime. Donators (with proof) will recieve a discount on all their orders depending on their donation!.</p>
-  <a href="https://www.wfp.org/support-us/stories/sudan?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=20981854684&amp;utm_content=158656946536&amp;gad_source=1&amp;gad_campaignid=20981854684&amp;gbraid=0AAAAACOf4HoSqW0m93Dr9UxPhhtxOb5jK&amp;gclid=Cj0KCQjwuvrBBhDcARIsAKRrkjcKmMhSMHi_vHGdOhF7EZFn-Bsq-y0S-WTBb2gg2I1iMT9wuOYBBtwaArDcEALw_wcB&amp;gclsrc=aw.ds" class="banner-button">Donate Today</a>
+<!-- Announcement Banner -->
+<div class="announcement-banner" id="announcementBanner">
+  <!-- Optional Image inside banner -->
+  <div class="banner-content">
+    <!-- Insert your image below -->
+    <img src="https://www.google.com/url?sa=i&amp;url=https%3A%2F%2Fx.com%2Fwfp_sudan&amp;psig=AOvVaw1dRJfNa40KD-Caci8laAxe&amp;ust=1749069135870000&amp;source=images&amp;cd=vfe&amp;opi=89978449&amp;ved=0CBQQjRxqFwoTCOibpLaM1o0DFQAAAAAdAAAAABAf" alt="Support Sudan" class="banner-image">
+    
+    <!-- Banner Text -->
+    <p class="banner-text">
+      🚨 Sudan is currently facing one of the worst humanitarian crises out there. Donate today even if it's a dime. Donators (with proof) will receive a discount on all their orders depending on their donation!
+    </p>
+  </div>
+  <!-- Donate Button -->
+  <a href="https://www.wfp.org/support-us/stories/sudan?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=20981854684&amp;utm_content=158656946536&amp;gad_source=1&amp;gad_campaignid=20981854684&amp;gbraid=0AAAAACOf4HoSqW0m93Dr9UxPhhtxOb5jK&amp;gclid=Cj0KCQjwuvrBBhDcARIsAKRrkjcKmMhSMHi_vHGdOhF7EZFn-Bsq-y0S-WTBb2gg2I1iMT9wuOYBBtwaArDcEALw_wcB&amp;gclsrc=aw.ds" class="banner-button" target="_blank" rel="noopener noreferrer">Donate Today</a>
+  <!-- Close button -->
+  <button class="close-btn" id="closeBtn" aria-label="Close">×</button>
 </div>
+
+<script>
+  // Script to handle dismissing the banner
+  document.getElementById('closeBtn').addEventListener('click', function() {
+    document.getElementById('announcementBanner').style.display = 'none';
+  });
+</script>
 
 <header>
     <img src="https://cdn.discordapp.com/attachments/1351204098904686709/1377686121382674603/5911de8f-2d88-42d6-a5ca-a036684cf7c3_removalai_preview.png?ex=6839ddaf&amp;is=68388c2f&amp;hm=c63638c301e10d762d5c350f6e664178b1236de6219880c433c8cce949339c93&amp;" alt="Lumina Logo" class="logo">
     <h1>Lumina©</h1>
 </header>
+
+
+
 
 <nav>
     <ul>
