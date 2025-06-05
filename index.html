@@ -107,7 +107,26 @@
 
 
 
+<style>
+  body {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* IE/Edge */
+    user-select: none;         /* Standard */
+  }
+</style>
+<script>
+  document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+  });
 
+  document.addEventListener('keydown', function(e) {
+    if ((e.ctrlKey && (e.key === 'c' || e.key === 'u' || e.key === 's' || e.key === 'p')) || 
+        (e.metaKey && (e.key === 'c' || e.key === 'u' || e.key === 's' || e.key === 'p'))) {
+      e.preventDefault();
+    }
+  });
+</script>
 
 <header>
     <img src="https://cdn.discordapp.com/attachments/1351204098904686709/1377686121382674603/5911de8f-2d88-42d6-a5ca-a036684cf7c3_removalai_preview.png?ex=6839ddaf&amp;is=68388c2f&amp;hm=c63638c301e10d762d5c350f6e664178b1236de6219880c433c8cce949339c93&amp;" alt="Lumina Logo" class="logo">
