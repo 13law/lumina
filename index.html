@@ -5,355 +5,235 @@
 }</script></head><body>
 
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lumina©</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        header {
-            background-color: #222;
-            color: #fff;
-            padding: 20px;
-            display: flex;
-            align-items: center;
-        }
-
-        header img.logo {
-            height: 50px;
-            width: 50px;
-            margin-right: 15px;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2em;
-        }
-
-        nav {
-            background-color: #444;
-        }
-
-        nav ul {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            list-style: none;
-        }
-
-        nav li {
-            margin: 0;
-        }
-
-        nav a {
-            display: block;
-            padding: 14px 20px;
-            color: #fff;
-            text-decoration: none;
-        }
-
-        nav a:hover {
-            background-color: #555;
-        }
-
-        section {
-            padding: 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        section h2 {
-            border-bottom: 2px solid #ccc;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-
-        /* Gallery styles */
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 10px;
-        }
-
-        .gallery img {
-            width: 100%;
-            height: auto;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        /* Specific sizes for showcase sections */
-        .showcase-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 10px;
-        }
-
-        /* Footer styling */
-        footer {
-            background-color: #222;
-            color: #fff;
-            text-align: center;
-            padding: 15px;
-            margin-top: 40px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <div class="banner">
+  <title>Lumina - Design Server</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome CDN -->
+  <script src="https://kit.fontawesome.com/f071d8f5c4.js" crossorigin="anonymous"></script>
+  <meta property="og:title" content="Lumina">
+  <meta property="og:description" content="Welcome to Lumina, your design server.">
 
 
-
-<style>
-  body {
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none;    /* Firefox */
-    -ms-user-select: none;     /* IE/Edge */
-    user-select: none;         /* Standard */
-  }
-</style>
-<script>
-  document.addEventListener('contextmenu', function(e) {
-    e.preventDefault();
-  });
-
-  document.addEventListener('keydown', function(e) {
-    if ((e.ctrlKey && (e.key === 'c' || e.key === 'u' || e.key === 's' || e.key === 'p')) || 
-        (e.metaKey && (e.key === 'c' || e.key === 'u' || e.key === 's' || e.key === 'p'))) {
-      e.preventDefault();
-    }
-  });
-</script>
-
-<a href="//www.dmca.com/Protection/Status.aspx?ID=2c8ee020-18d5-41e2-8e55-45baf4b6dbf6" title="DMCA.com Protection Status" class="dmca-badge"> <img src="https://images.dmca.com/Badges/dmca-badge-w250-5x1-09.png?ID=2c8ee020-18d5-41e2-8e55-45baf4b6dbf6" alt="DMCA.com Protection Status"></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script><header>
-    <img src="https://cdn.discordapp.com/attachments/1351204098904686709/1377686121382674603/5911de8f-2d88-42d6-a5ca-a036684cf7c3_removalai_preview.png?ex=6839ddaf&amp;is=68388c2f&amp;hm=c63638c301e10d762d5c350f6e664178b1236de6219880c433c8cce949339c93&amp;" alt="Lumina Logo" class="logo">
-    <h1>Lumina©</h1>
+<header class="nav">
+  <div class="container">
+    <a href="#hero"><img src="https://cdn.discordapp.com/attachments/1356971167176720525/1380262404478341240/5911de8f-2d88-42d6-a5ca-a036684cf7c3_removalai_preview.png?ex=68448e89&amp;is=68433d09&amp;hm=b786e96775379091f31f79f74ae23275f0b84dfeab2ddeac1f1e19a8d245243a&amp;" class="logo" alt="Lumina Logo"></a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about"><i class="fas fa-book"></i> About Us</a></li>
+        <li><a href="#showcase"><i class="fas fa-image"></i> Showcase</a></li>
+        <li><a href="#pricing"><i class="fas fa-dollar-sign"></i> Pricing</a></li>
+        <li><a href="#socials"><i class="fas fa-users"></i> Socials</a></li>
+        <li><a href="#orders"><i class="fas fa-clipboard-list"></i> Our Orders</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
+<main>
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="container">
+      <h2>Welcome to <span class="stop-blinking">Lumina</span></h2>
+      <a href="#showcase" class="btn primary">View Showcase</a>
+    </div>
+  </section>
 
+  <!-- About Us -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2><i class="fas fa-book"></i> About Us</h2>
+      <p>Lumina is a premier design server dedicated to delivering high-quality graphics, web layouts, and custom liveries for your community or project. Our team of skilled designers is here to bring your vision to life.</p>
+    </div>
+  </section>
 
-<nav>
-    <ul>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#pricing">Order Pricing</a></li>
-        <li><a href="#graphics">Graphics Showcase</a></li>
-        <li><a href="#join">Join Us</a></li>
-        <li><a href="#livery">Livery Showcase</a></li>
-        <li><a href="#webhook">Webhook Showcase</a></li>
-        <li><a href="#other">Other Showcase</a></li>
-    </ul>
-</nav>
+  <!-- Showcase -->
+  <section id="showcase" class="section dark">
+    <div class="container">
+      <h2><i class="fas fa-image"></i> Showcase</h2>
+      <div class="showcase-grid">
+        <div class="showcase-item">
+          <img src="https://cdn.discordapp.com/attachments/1351617681547067432/1363190953287880724/caf.png?ex=6839de02&amp;is=68388c82&amp;hm=05f3de4404fecf69009a912c15baa98fdc5323501df0d053b9f5a88822eba0d4&amp;" alt="Graphics Sample 1">
+          <p>Graphics Sample 1</p>
+        </div>
+        <div class="showcase-item">
+          <img src="images/livery1.png" alt="Livery Sample 1">
+          <p>Livery Sample 1</p>
+        </div>
+        <div class="showcase-item">
+          <img src="https://cdn.discordapp.com/attachments/1351204098904686709/1377743739899875401/image.png?ex=68449f58&amp;is=68434dd8&amp;hm=af76da1a95b4da68be4102918e2ad64df09a1f67ced2a54e11569164f8d635f5&amp;" alt="Webhook Sample 1">
+          <p>Webhook Sample 1</p>
+        </div>
+        <div class="showcase-item">
+          <img src="images/others1.png" alt="Other Sample">
+          <p>Other Work</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
 
-<title>Announcement Banner</title>
-<style>
-  /* Banner container */
-  .announcement-banner {
-    background-color: #1ebbff;
-    color: #fff;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-family: Arial, sans-serif;
-    position: relative; /* For positioning the close button */
-  }
+      <div class="showcase-grid">
+        <div class="showcase-item">
+          <img src="images/graphics1.png" alt="Graphics Sample 1">
+          <p>Graphics Sample 1</p>
+        </div>
+        <div class="showcase-item">
+          <img src="images/livery1.png" alt="Livery Sample 1">
+          <p>Livery Sample 1</p>
+        </div>
+        <div class="showcase-item">
+          <img src="images/webhook1.png" alt="Webhook Sample 1">
+          <p>Webhook Sample 1</p>
+        </div>
+        <div class="showcase-item">
+          <img src="images/others1.png" alt="Other Sample">
+          <p>Other Work</p>
+        </div>
+      </div>
+    </div>
+        <div class="container">
 
-  /* Content inside the banner: image + text + button */
-  .banner-content {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px; /* space between image and text */
-    flex: 1; /* take up remaining space */
-  }
+      <div class="showcase-grid">
+        <div class="showcase-item">
+          <img src="images/graphics1.png" alt="Graphics Sample 1">
+          <p>Graphics Sample 1</p>
+        </div>
+        <div class="showcase-item">
+          <img src="images/livery1.png" alt="Livery Sample 1">
+          <p>Livery Sample 1</p>
+        </div>
+        <div class="showcase-item">
+          <img src="images/webhook1.png" alt="Webhook Sample 1">
+          <p>Webhook Sample 1</p>
+        </div>
+        <div class="showcase-item">
+          <img src="images/others1.png" alt="Other Sample">
+          <p>Other Work</p>
+        </div>
+      </div>
+    </div>
+        <div class="container">
 
-  /* Optional image styling */
-  .banner-image {
-    max-width: 80px;
-    max-height: 80px;
-    object-fit: contain;
-  }
+      <div class="showcase-grid">
+        <div class="showcase-item">
+          <img src="images/graphics1.png" alt="Graphics Sample 1">
+          <p>Graphics Sample 1</p>
+        </div>
+        <div class="showcase-item">
+          <img src="images/livery1.png" alt="Livery Sample 1">
+          <p>Livery Sample 1</p>
+        </div>
+        <div class="showcase-item">
+          <img src="images/webhook1.png" alt="Webhook Sample 1">
+          <p>Webhook Sample 1</p>
+        </div>
+        <div class="showcase-item">
+          <img src="images/others1.png" alt="Other Sample">
+          <p>Other Work</p>
+        </div>
+      </div>
+    </div>
+        <div class="container">
 
-  /* Text styling */
-  .banner-text {
-    font-size: 1.2em;
-    margin: 0;
-    flex: 1; /* allow text to expand */
-  }
+      <div class="showcase-grid">
+        <div class="showcase-item">
+          <img src="images/graphics1.png" alt="Graphics Sample 1">
+          <p>Graphics Sample 1</p>
+        </div>
+        <div class="showcase-item">
+          <img src="images/livery1.png" alt="Livery Sample 1">
+          <p>Livery Sample 1</p>
+        </div>
+        <div class="showcase-item">
+          <img src="images/webhook1.png" alt="Webhook Sample 1">
+          <p>Webhook Sample 1</p>
+        </div>
+        <div class="showcase-item">
+          <img src="images/others1.png" alt="Other Sample">
+          <p>Other Work</p>
+        </div>
+      </div>
+    </div>
+        <div class="container">
 
-  /* Button styling */
-  .banner-button {
-    background-color: #fff;
-    color: #1ebbff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
-    border-radius: 4px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-  }
+      <div class="showcase-grid">
+        <div class="showcase-item">
+          <img src="images/graphics1.png" alt="Graphics Sample 1">
+          <p>Graphics Sample 1</p>
+        </div>
+        <div class="showcase-item">
+          <img src="images/livery1.png" alt="Livery Sample 1">
+          <p>Livery Sample 1</p>
+        </div>
+        <div class="showcase-item">
+          <img src="images/webhook1.png" alt="Webhook Sample 1">
+          <p>Webhook Sample 1</p>
+        </div>
+        <div class="showcase-item">
+          <img src="images/others1.png" alt="Other Sample">
+          <p>Other Work</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  .banner-button:hover {
-    background-color: #e0e0e0;
-  }
+  <!-- Pricing -->
+  <section id="pricing" class="section">
+    <div class="container">
+      <h2><i class="fas fa-dollar-sign"></i> Our Pricing</h2>
+          <p>Please note our pricing is based off the Quality, Quantity &amp; Reference</p>
+      <div class="pricing-cards">
+        <div class="pricing-card">
+          <h3>Basic</h3>
+          <p>$ 50 - Web Design</p>
+          <p>$ 30 - Logos &amp; Graphics</p>
+          <p>$20 - Liveries</p>
+          <a href="#orders" class="btn secondary">Order Now</a>
+        </div>
+        <div class="pricing-card">
+          <h3>Standard</h3>
+          <p>$100 - Web + Graphics</p>
+          <p>$60 - Liveries</p>
+          <p>Plus Priority Support</p>
+          <a href="#orders" class="btn secondary">Order Now</a>
+        </div>
+        <div class="pricing-card">
+          <h3>Premium</h3>
+          <p>Custom Packages</p>
+          <p>Includes all services + fast delivery</p>
+          <a href="#orders" class="btn secondary">Order Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  /* Close button styling */
-  .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    background: transparent;
-    border: none;
-    font-size: 1.5em;
-    color: #fff;
-    cursor: pointer;
-    line-height: 1;
-  }
-  .close-btn:hover {
-    color: #ccc;
-  }
-</style>
+  <!-- Socials -->
+  <section id="socials" class="section dark">
+    <div class="container">
+      <h2><i class="fas fa-users"></i> Connect with Us</h2>
+      <div class="social-icons">
+        <a href="https://discord.gg/SmCHnSenXz" target="_blank"><i class="fab fa-discord"></i></a>
+        <a href="https://x.com/nxwoll" target="_blank"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </section>
 
+  <!-- Our Orders -->
+  <section id="orders" class="section">
+    <div class="container">
+      <h2><i class="fas fa-clipboard-list"></i> Our Orders</h2>
+      <p>To place an order, open an order ticket via Discord. We offer custom packages and fast delivery for all your design needs.</p>
+    </div>
+  </section>
+</main>
 
-
-<!-- Announcement Banner -->
-<div class="announcement-banner" id="announcementBanner">
-  <!-- Optional Image inside banner -->
-  <div class="banner-content">
-    <!-- Insert your image below -->
-    <img src="https://www.google.com/url?sa=i&amp;url=https%3A%2F%2Fx.com%2Fwfp_sudan&amp;psig=AOvVaw1dRJfNa40KD-Caci8laAxe&amp;ust=1749069135870000&amp;source=images&amp;cd=vfe&amp;opi=89978449&amp;ved=0CBQQjRxqFwoTCOibpLaM1o0DFQAAAAAdAAAAABAf" alt="Support Sudan" class="banner-image">
-    
-    <!-- Banner Text -->
-    <p class="banner-text">
-      🚨 Sudan is currently facing one of the worst humanitarian crises out there. Donate today even if it's a dime. Donators (with proof) will receive a discount on all their orders depending on their donation!
-    </p>
+<footer class="footer">
+  <div class="container">
+    <p>© 2025 Lumina. All rights reserved.</p>
   </div>
-  <!-- Donate Button -->
-  <a href="https://www.wfp.org/support-us/stories/sudan?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=20981854684&amp;utm_content=158656946536&amp;gad_source=1&amp;gad_campaignid=20981854684&amp;gbraid=0AAAAACOf4HoSqW0m93Dr9UxPhhtxOb5jK&amp;gclid=Cj0KCQjwuvrBBhDcARIsAKRrkjcKmMhSMHi_vHGdOhF7EZFn-Bsq-y0S-WTBb2gg2I1iMT9wuOYBBtwaArDcEALw_wcB&amp;gclsrc=aw.ds" class="banner-button" target="_blank" rel="noopener noreferrer">Donate Today</a>
-  <!-- Close button -->
-  <button class="close-btn" id="closeBtn" aria-label="Close">×</button>
-</div>
-
-<script>
-  // Script to handle dismissing the banner
-  document.getElementById('closeBtn').addEventListener('click', function() {
-    document.getElementById('announcementBanner').style.display = 'none';
-  });
-</script>
-
-
-
-
-<section id="about">
-    <h2>About Us</h2>
-    <p>Welcome to Lumina! We specialize in custom ERLC designs, including graphics, liveries, webhooks, and more. Our team is dedicated to providing high-quality, creative content for your server needs.</p>
-</section>
-
-<section id="join">
-    <h2>Join Us</h2>
-<button onclick="window.location.href='https://discord.gg/SmCHnSenXz'">
-  Click me to join
-</button>
-</section>
-
-<section id="pricing">
-    <h2>Order Pricing</h2>
-    <p>Contact us for custom quotes or check our pricing packages below:</p>
-     <p>A quick thing to note, our pricing depends on the quantity,</p>
-    <ul>
-        <li>Graphics Design: Minimum Pricing: R$80</li>
-        <li>Livery Creation: Minimum Pricing: R$100</li>
-        <li>Webhook Setup: Minimum Pricing: R$10 (Negotiable)</li>
-        <li>Other Services: Contact for details</li>
-    </ul>
-</section>
-
-<section id="graphics">
-    <h2>Graphics Showcase (more to come)</h2>
-    <div class="gallery">
-        <img src="https://cdn.discordapp.com/attachments/1351617681547067432/1363190953287880724/caf.png?ex=6839de02&amp;is=68388c82&amp;hm=05f3de4404fecf69009a912c15baa98fdc5323501df0d053b9f5a88822eba0d4&amp;" alt="Graphic 1">
-        <img src="https://cdn.discordapp.com/attachments/1352645902581633054/1352807260924940309/ads.png?ex=6839aa30&amp;is=683858b0&amp;hm=8b37b9c5136391d74bcb44138531991ae3627458a54632603899a8ffc5f65e88&amp;" alt="Graphic 2">
-        <img src="https://cdn.discordapp.com/attachments/1352645902581633054/1377719349112209479/cfa38ce0-01a8-447d-b73e-bc3e6587677d_removalai_preview.png?ex=6839fca1&amp;is=6838ab21&amp;hm=560a2cc1063b4b8f6a2d87fc20bcc0fc31f0f7ed5e472f4ba571f081aa8d82c2&amp;" alt="Graphic 3">
-        <img src="https://cdn.discordapp.com/attachments/1352645902581633054/1377719349758001193/BCMS.png?ex=6839fca1&amp;is=6838ab21&amp;hm=f536a1460d5cb9dbb8881641b36fa01d7edbf7a9234edf5eb43bd7e3a66cc5ca&amp;" alt="Graphic 4">
-        <img src="https://cdn.discordapp.com/attachments/1352645902581633054/1377719350013726840/WISRP_1.png?ex=6839fca1&amp;is=6838ab21&amp;hm=f913d1efcf9c51b2b86640150dac9fb0a2ae23031cbde62baf90ee3a262e9a55&amp;" alt="Graphic 5">
-        <img src="https://cdn.discordapp.com/attachments/1352645902581633054/1377720681965293732/parcel_nobg.png?ex=6839fddf&amp;is=6838ac5f&amp;hm=3db6d1c40debbba2823f950ee65ef4841135cfe0ad7dc99dd8ed4612520f4614&amp;" alt="Graphic 6">
-        <img src="https://cdn.discordapp.com/attachments/1352645902581633054/1377720682267545710/banner_ksrp_1.png?ex=6839fddf&amp;is=6838ac5f&amp;hm=b06c016630040ad80916638266f4919f53d6b50500855f3e1d80e99b64450737&amp;" alt="Graphic 7">
-        <img src="https://cdn.discordapp.com/attachments/1352645902581633054/1377720682602958858/property_of_.mzr_1.png?ex=6839fddf&amp;is=6838ac5f&amp;hm=3b22139d6078f0cd0f30904f63644a485b1b04d9ca5a16005226d9046a2aaf4d&amp;" alt="Graphic 8">
-        <img src="https://cdn.discordapp.com/attachments/1352645902581633054/1377720685559943249/Red_And_white_Modern_Digital_Marketing_Expert_Outdoor_Banner_20241111_234932_0000.png?ex=6839fde0&amp;is=6838ac60&amp;hm=da94ee75bdd5051b3a18b6045e575c595b9c986fa15ba4d61d2c2ec5fcc7b59b&amp;" alt="Graphic 9">
-        <img src="https://cdn.discordapp.com/attachments/1352645902581633054/1377720686239289375/wave.png?ex=6839fde0&amp;is=6838ac60&amp;hm=13eea20eb3f07b0385533187efa2e5d7c0e490734b69d1d9114e97145cfe2f0b&amp;" alt="Graphic 10">
-        <img src="images/graphic11.png" alt="Graphic 11">
-        <img src="images/graphic12.png" alt="Graphic 12">
-        <img src="images/graphic13.png" alt="Graphic 13">
-        <img src="images/graphic14.png" alt="Graphic 14">
-        <img src="images/graphic15.png" alt="Graphic 15">
-        <img src="images/graphic16.png" alt="Graphic 16">
-        <img src="images/graphic17.png" alt="Graphic 17">
-        <img src="images/graphic18.png" alt="Graphic 18">
-        <img src="images/graphic19.png" alt="Graphic 19">
-        <img src="images/graphic20.png" alt="Graphic 20">
-    </div>
-</section>
-
-<section id="livery">
-    <h2>Livery Showcase (More to come)</h2>
-    <div class="gallery">
-        <img src="https://cdn.discordapp.com/attachments/1340312018460086313/1376303367210532966/image.png?ex=68397325&amp;is=683821a5&amp;hm=979b54bb81afb4bf558ec958ba9c12df704a772463a479c77f6f521b159368e5&amp;" alt="Livery 1">
-        <img src="https://cdn.discordapp.com/attachments/1351204098904686709/1378135971308240927/image.png?ex=683b80a4&amp;is=683a2f24&amp;hm=3fd234756bae719ee248de63bda8d8e90755764e38d03d96bfd17639b6c71a28&amp;" alt="Livery 2">
-        <img src="https://cdn.discordapp.com/attachments/1352645902581633054/1379475751232868505/image.png?ex=68406068&amp;is=683f0ee8&amp;hm=05e87071db80acfbd0c2d6863e4fd80f4568f247d59d33f9367183edc4ca789b&amp;" alt="Livery 3">
-        <img src="images/livery4.png" alt="Livery 4">
-        <img src="images/livery5.png" alt="Livery 5">
-        <img src="images/livery6.png" alt="Livery 6">
-        <img src="images/livery7.png" alt="Livery 7">
-        <img src="images/livery8.png" alt="Livery 8">
-        <img src="images/livery9.png" alt="Livery 9">
-        <img src="images/livery10.png" alt="Livery 10">
-        <img src="images/livery11.png" alt="Livery 11">
-        <img src="images/livery12.png" alt="Livery 12">
-        <img src="images/livery13.png" alt="Livery 13">
-        <img src="images/livery14.png" alt="Livery 14">
-        <img src="images/livery15.png" alt="Livery 15">
-        <img src="images/livery16.png" alt="Livery 16">
-        <img src="images/livery17.png" alt="Livery 17">
-        <img src="images/livery18.png" alt="Livery 18">
-        <img src="images/livery19.png" alt="Livery 19">
-        <img src="images/livery20.png" alt="Livery 20">
-    </div>
-</section>
-
-<section id="webhook">
-    <h2>Webhook Showcase</h2>
-    <div class="gallery">
-        <img src="https://cdn.discordapp.com/attachments/1351204098904686709/1377743739639824505/image.png?ex=683a1358&amp;is=6838c1d8&amp;hm=8a444b014b649406b4715c8702bf1f400776a42f817e3a23f58f2006b5151430&amp;" alt="Webhook 1">
-        <img src="https://cdn.discordapp.com/attachments/1351204098904686709/1377743739899875401/image.png?ex=683a1358&amp;is=6838c1d8&amp;hm=5ee238bab4364ea46a16ae18a729ab523ad2f7d13b70e546a015aaebd120caf8&amp;" alt="Webhook 2">
-        <img src="https://cdn.discordapp.com/attachments/1369402125834260591/1375906776771199006/Screenshot_2025-05-24_213825.png?ex=6839fc0a&amp;is=6838aa8a&amp;hm=ddd0558d2ea9f4a51bc35962af616fd429ac7a497c879da459b58049022c735e&amp;" alt="Webhook 3">
-        <img src="https://cdn.discordapp.com/attachments/1369402125834260591/1375906777144758322/Screenshot_2025-05-24_213916.png?ex=6839fc0a&amp;is=6838aa8a&amp;hm=28d8d5e6bd3e340a0391ee73c93e3c1a25ee21a1ff98f4771ed36b77f364b204&amp;" alt="Webhook 4">
-        <img src="https://cdn.discordapp.com/attachments/1369402125834260591/1375906777475973140/Screenshot_2025-05-24_213928.png?ex=6839fc0a&amp;is=6838aa8a&amp;hm=794a17e1e856df5a3334c669f38ea853c612b26b6f083c59193f56bcb0836d15&amp;" alt="Webhook 5">
-        <img src="https://cdn.discordapp.com/attachments/1369402125834260591/1375906777828429876/Screenshot_2025-05-24_214016.png?ex=6839fc0a&amp;is=6838aa8a&amp;hm=5d5e048e37baf6bdd72cfbfeb0106d5a151652d60ba9283b6b3b184bf3d39ab1&amp;" alt="Webhook 6">
-        <img src="https://cdn.discordapp.com/attachments/1369402125834260591/1375906778302120099/Screenshot_2025-05-24_214040.png?ex=6839fc0b&amp;is=6838aa8b&amp;hm=4549efae76728e451efd1eef61eadab9438530ecb4c4b1c97a52962200fa074e&amp;" alt="Webhook 7">
-        <img src="https://cdn.discordapp.com/attachments/1351204098904686709/1377783393479299092/image.png?ex=683a3846&amp;is=6838e6c6&amp;hm=f9d8b77889771eb8d2c9f27428abd86bfddf692cf39faf8b2ed7c9d576e8857c&amp;" alt="Webhook 8">
-
-    </div>
-</section>
-
-<section id="other">
-    <h2>Other Showcase</h2>
-    <div class="gallery">
-        <img src="https://cdn.discordapp.com/attachments/1351204098904686709/1377784227726229635/image.png?ex=683a390d&amp;is=6838e78d&amp;hm=9c6368494decac267f29a13b1cd5a32208cc8b970c897668874a2aed270b1c76&amp;" alt="Other 1">
-        <img src="https://cdn.discordapp.com/attachments/1351204098904686709/1377784413345026189/image.png?ex=683a393a&amp;is=6838e7ba&amp;hm=169505e52e774a4a8fa525bd7dea8d372c7ed53c81ad4e6a8b112b8f845251d7&amp;" alt="Other 2">
-        <img src="https://cdn.discordapp.com/attachments/1351204098904686709/1377784773715689502/image.png?ex=683a3990&amp;is=6838e810&amp;hm=4ed8c0041f63395a598109d8486f90ade50b756a5404f265edd38c906d94b049&amp;" alt="Other 3">
-        <img src="https://cdn.discordapp.com/attachments/1351204098904686709/1377784836810342472/image.png?ex=683a399f&amp;is=6838e81f&amp;hm=9fcb75d7a664b0e924293506db5083d5e788f0628de17401264e8d676105cb27&amp;" alt="Other 4">
-        <img src="images/other5.png" alt="Other 5">
-        <img src="images/other6.png" alt="Other 6">
-    </div>
-</section>
-
-<footer>
-    <p>© 2024 Lumina. All rights reserved.</p>
 </footer>
 
+<script src="script.js"></script>
 
-<script src="./script.js"></script></body></html>
+</div><script src="./script.js"></script></body></html>

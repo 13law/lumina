@@ -1,0 +1,180 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1a1a1a;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2em;
+}
+
+/* Navigation */
+header.nav {
+  background-color: #2b2d31;
+  padding: 1em 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header.nav .container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+.logo {
+  height: 50px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.nav-links a i {
+  margin-right: 0.5em;
+}
+
+/* Sections */
+section {
+  padding: 4em 2em;
+}
+section.dark {
+  background-color: #2b2d31;
+}
+section h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+section p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+/* Buttons */
+.btn {
+  padding: 0.75em 1.5em;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+.primary {
+  background-color: #fff;
+  color: #2b2d31;
+}
+.primary:hover {
+  background-color: #f0f0f0;
+}
+.secondary {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+.secondary:hover {
+  background-color: #fff;
+  color: #2b2d31;
+}
+
+/* Showcase Grid */
+.showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5em;
+  margin-top: 2em;
+}
+.showcase-item {
+  background: #333;
+  padding: 1em;
+  border-radius: 10px;
+  text-align: center;
+}
+.showcase-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 0.5em;
+}
+
+/* Pricing */
+.pricing-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 2em;
+}
+.pricing-card {
+  background: #444;
+  padding: 1.5em;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+}
+.pricing-card h3 {
+  margin-bottom: 1em;
+}
+.pricing-card p {
+  margin: 0.5em 0;
+}
+
+/* Socials */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 1em;
+}
+.social-icons a {
+  color: #fff;
+  font-size: 2em;
+  transition: color 0.3s;
+}
+.social-icons a:hover {
+  color: #ddd;
+}
+
+/* Footer */
+footer.footer {
+  background-color: #2b2d31;
+  padding: 1em 0;
+  text-align: center;
+  font-size: 0.9em;
+  color: #aaa;
+}
+
+/* Blinking effect for welcome text */
+.stop-blinking {
+  animation: blink 1s step-start infinite;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
